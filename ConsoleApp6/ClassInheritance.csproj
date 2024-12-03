@@ -46,6 +46,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Animal.cs" />
+    <Compile Include="Utils\BankAccount.cs" />
+    <Compile Include="Utils\BaseClass.cs" />
     <Compile Include="Utils\Car.cs" />
     <Compile Include="Utils\Cat.cs" />
     <Compile Include="Utils\Dog.cs" />
@@ -53,6 +55,7 @@
     <Compile Include="Utils\Employee.cs" />
     <Compile Include="Utils\Motorcycle.cs" />
     <Compile Include="Utils\People.cs" />
+    <Compile Include="Utils\Shape.cs" />
     <Compile Include="Utils\TestSealed.cs" />
     <Compile Include="Utils\Vehicle.cs" />
   </ItemGroup>

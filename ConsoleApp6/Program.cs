@@ -1,4 +1,5 @@
-﻿using ConsoleApp6.Utils;
+﻿using ClassInheritance.Utils;
+using ConsoleApp6.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -138,6 +139,65 @@ namespace ConsoleApp6
                         }
                         break;
 
+                    // пупупу...
+
+                    case "10":
+                        {
+                            // мегамувы, радвоение аккаунтов
+                            Console.Clear();
+                            Console.WriteLine("Задание №10");
+
+                            SavingsAccount account = new SavingsAccount();
+
+                            account.Deposit(100);
+                            account.Withdraw(50);
+
+                            CheckingAccount checkingAccount = new CheckingAccount();
+
+                            checkingAccount.Deposit(100);
+                            checkingAccount.Withdraw(50);
+                            
+
+                            Console.ReadKey();
+                        }
+                        break;
+
+                    case "11":
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Задание №11");
+
+                            BaseClass baseObj = new BaseClass();
+                            DerivedClass derivedObj = new DerivedClass();
+
+                            baseObj.ShowMessage();
+                            derivedObj.ShowMessage();
+                            derivedObj.NewShowMessage();
+
+                            Console.ReadKey();
+                        }
+                        break;
+
+                    case "12":
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Задание №12");
+
+                            Shape triangle = new Triangle(3, 4, 5);
+                            Console.WriteLine($"Площадь треугольника: {triangle.CalculateArea()}");
+                            Console.WriteLine($"Периметр треугольника: {triangle.CalculatePerimeter()}");
+
+                            Shape square = new Square(4);
+                            Console.WriteLine($"Площадь квадрата: {square.CalculateArea()}");
+                            Console.WriteLine($"Периметр квадрата: {square.CalculatePerimeter()}");
+
+                            Shape circle = new Circle(5);
+                            Console.WriteLine($"Площадь круга: {circle.CalculateArea()}");
+                            Console.WriteLine($"Периметр круга: {circle.CalculatePerimeter()}");
+
+                            Console.ReadKey();
+                        }
+                        break;
 
                     default:
                         Console.WriteLine("Произошла ошибка! ");
